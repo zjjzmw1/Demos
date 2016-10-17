@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video BackgroundVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VideoBackgroundVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="VideoBackgroundVC" customModule="Demos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OjG-9V-qN3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="52B-dW-ppZ"/>
+                                    <constraint firstAttribute="height" constant="88" id="JRZ-eM-eCD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pz-kx-qkJ">
+                                <color key="backgroundColor" red="0.998116135597229" green="1" blue="0.99854004383087158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="nYE-pX-zMv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" red="0.086274509799999996" green="0.63921568630000003" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZP-y8-gkj">
+                                <color key="backgroundColor" red="0.089431285858154297" green="0.68066966533660889" blue="0.0118274986743927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="jlO-sn-KfG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" red="0.99969649314880371" green="0.99999141693115234" blue="0.99967747926712036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OZP-y8-gkj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="CQK-k8-aAY"/>
+                            <constraint firstItem="OZP-y8-gkj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EV1-qH-qjh"/>
+                            <constraint firstAttribute="trailing" secondItem="8pz-kx-qkJ" secondAttribute="trailing" constant="30" id="FIe-Ge-bff"/>
+                            <constraint firstAttribute="trailing" secondItem="OZP-y8-gkj" secondAttribute="trailing" constant="30" id="Jrf-FD-iwl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8pz-kx-qkJ" secondAttribute="bottom" constant="20" id="NJz-sZ-8MB"/>
+                            <constraint firstItem="8pz-kx-qkJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VtV-y6-Phd"/>
+                            <constraint firstItem="8pz-kx-qkJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="WDF-38-XKD"/>
+                            <constraint firstItem="8pz-kx-qkJ" firstAttribute="top" secondItem="OZP-y8-gkj" secondAttribute="bottom" constant="20" id="glh-Hw-DYl"/>
+                            <constraint firstItem="OjG-9V-qN3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="orv-fc-vY4"/>
+                            <constraint firstItem="OjG-9V-qN3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="pmo-nQ-Bop"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="OZP-y8-gkj" id="m8f-7r-R9m"/>
+                        <outlet property="signupBtn" destination="8pz-kx-qkJ" id="QE3-Q5-ShV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="100" height="127"/>
+    </resources>
+</document>

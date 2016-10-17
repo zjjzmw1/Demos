@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Emoji MachineVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="EmojiMachineVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="EmojiMachineVC" customModule="Demos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vegas" translatesAutoresizingMaskIntoConstraints="NO" id="Ylo-ai-q9x">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAk-bH-glT">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="fig-Mr-44z">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syA-dH-uTw">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="hLT-If-HjA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                            <color key="textColor" red="0.99988853931427002" green="0.99998223781585693" blue="0.99983125925064087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lo2-8k-W21">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="200" id="DTE-6G-3Qn"/>
+                                            </constraints>
+                                        </pickerView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkW-sx-lOy">
+                                            <color key="backgroundColor" red="0.2153223169" green="0.79543269230000002" blue="0.36806365060000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="ig2-v0-OCs"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                            <state key="normal" title="开始抽奖">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="goButtoDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VmI-Mb-f36"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wkW-sx-lOy" firstAttribute="leading" secondItem="fig-Mr-44z" secondAttribute="leading" constant="20" id="3qU-ha-gVu"/>
+                                        <constraint firstItem="Lo2-8k-W21" firstAttribute="top" secondItem="syA-dH-uTw" secondAttribute="bottom" constant="50" id="Hbt-BG-Ipk"/>
+                                        <constraint firstItem="syA-dH-uTw" firstAttribute="centerX" secondItem="Lo2-8k-W21" secondAttribute="centerX" id="Og8-pz-IIn"/>
+                                        <constraint firstItem="wkW-sx-lOy" firstAttribute="centerX" secondItem="Lo2-8k-W21" secondAttribute="centerX" id="RuU-si-PsS"/>
+                                        <constraint firstItem="wkW-sx-lOy" firstAttribute="width" secondItem="Lo2-8k-W21" secondAttribute="width" constant="-40" id="XaC-cg-pjH"/>
+                                        <constraint firstItem="syA-dH-uTw" firstAttribute="width" secondItem="Lo2-8k-W21" secondAttribute="width" id="jxj-s4-7zw"/>
+                                        <constraint firstAttribute="trailing" secondItem="wkW-sx-lOy" secondAttribute="trailing" constant="20" id="kbe-bY-a36"/>
+                                        <constraint firstItem="wkW-sx-lOy" firstAttribute="top" secondItem="Lo2-8k-W21" secondAttribute="bottom" constant="100" id="zQI-hn-eBE"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lo2-8k-W21" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="2do-gJ-Dfk"/>
+                            <constraint firstItem="Lo2-8k-W21" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G9z-40-i1I"/>
+                            <constraint firstItem="Lo2-8k-W21" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VYI-wQ-eB3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emojiPickerView" destination="Lo2-8k-W21" id="clf-F1-7iB"/>
+                        <outlet property="goButton" destination="wkW-sx-lOy" id="xLP-7B-KF8"/>
+                        <outlet property="resultLabel" destination="syA-dH-uTw" id="ySy-9M-cJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215.19999999999999" y="338.68065967016497"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="vegas" width="800" height="800"/>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--We Chat Fans Head ImgVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="WeChatFansHeadImgVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="WeChatFansHeadImgVC" customModule="Demos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="C0n-uW-Wqu"/>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfc-kG-nm1">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QYs-L8-pzY">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="32t-GY-bas"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="bo4-2d-ob4"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlT-nU-aUP">
+                                            <color key="backgroundColor" red="0.090196078430000007" green="0.68235294120000001" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="jZC-s3-DZE"/>
+                                            </constraints>
+                                            <state key="normal" title="微信粉丝头像">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="showHeadImageButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XvW-Pm-3ox"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="NSz-fc-cfI">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="gLQ-GL-V9w"/>
+                                                <constraint firstAttribute="width" constant="80" id="z6p-MJ-orf"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NSz-fc-cfI" firstAttribute="centerY" secondItem="QYs-L8-pzY" secondAttribute="centerY" constant="-50" id="2W9-Sn-8Ch"/>
+                                        <constraint firstItem="qlT-nU-aUP" firstAttribute="top" secondItem="NSz-fc-cfI" secondAttribute="bottom" constant="50" id="Eqb-hZ-JQR"/>
+                                        <constraint firstItem="32t-GY-bas" firstAttribute="height" secondItem="NSz-fc-cfI" secondAttribute="height" id="Frz-sF-OVH"/>
+                                        <constraint firstItem="bo4-2d-ob4" firstAttribute="width" secondItem="NSz-fc-cfI" secondAttribute="width" id="GLK-c7-9Vx"/>
+                                        <constraint firstItem="bo4-2d-ob4" firstAttribute="height" secondItem="NSz-fc-cfI" secondAttribute="height" id="GYG-Sg-mmg"/>
+                                        <constraint firstItem="bo4-2d-ob4" firstAttribute="centerY" secondItem="NSz-fc-cfI" secondAttribute="centerY" id="Q5H-4A-eYA"/>
+                                        <constraint firstItem="32t-GY-bas" firstAttribute="width" secondItem="NSz-fc-cfI" secondAttribute="width" id="fiJ-er-MZV"/>
+                                        <constraint firstItem="32t-GY-bas" firstAttribute="leading" secondItem="NSz-fc-cfI" secondAttribute="trailing" constant="20" id="glt-8f-k2R"/>
+                                        <constraint firstItem="NSz-fc-cfI" firstAttribute="centerX" secondItem="QYs-L8-pzY" secondAttribute="centerX" id="iCU-j5-VR8"/>
+                                        <constraint firstItem="qlT-nU-aUP" firstAttribute="leading" secondItem="bo4-2d-ob4" secondAttribute="leading" id="j0w-Ur-h2a"/>
+                                        <constraint firstItem="qlT-nU-aUP" firstAttribute="trailing" secondItem="32t-GY-bas" secondAttribute="trailing" id="nLl-r2-1rA"/>
+                                        <constraint firstItem="NSz-fc-cfI" firstAttribute="leading" secondItem="bo4-2d-ob4" secondAttribute="trailing" constant="20" id="u8v-Lf-dSM"/>
+                                        <constraint firstItem="32t-GY-bas" firstAttribute="centerY" secondItem="NSz-fc-cfI" secondAttribute="centerY" id="vvD-xv-i9q"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bfc-kG-nm1" secondAttribute="trailing" id="3JD-td-X10"/>
+                            <constraint firstItem="bfc-kG-nm1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Azl-Rl-Lxl"/>
+                            <constraint firstItem="bfc-kG-nm1" firstAttribute="leading" secondItem="C0n-uW-Wqu" secondAttribute="leading" id="DTS-YB-Cal"/>
+                            <constraint firstItem="bfc-kG-nm1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IXz-Xl-3Mh"/>
+                            <constraint firstItem="bfc-kG-nm1" firstAttribute="bottom" secondItem="C0n-uW-Wqu" secondAttribute="bottom" id="Jd4-OA-dDW"/>
+                            <constraint firstItem="bfc-kG-nm1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KA5-pn-P2X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bfc-kG-nm1" secondAttribute="trailing" id="KbY-Jc-mct"/>
+                            <constraint firstItem="bfc-kG-nm1" firstAttribute="top" secondItem="C0n-uW-Wqu" secondAttribute="top" id="Kmb-ia-cbM"/>
+                            <constraint firstAttribute="trailing" secondItem="bfc-kG-nm1" secondAttribute="trailing" id="cmc-vG-FNb"/>
+                            <constraint firstItem="bfc-kG-nm1" firstAttribute="trailing" secondItem="C0n-uW-Wqu" secondAttribute="trailing" id="hn6-EG-hsU"/>
+                            <constraint firstItem="bfc-kG-nm1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oLQ-Hf-wgy"/>
+                            <constraint firstItem="bfc-kG-nm1" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="tZF-JQ-fLl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3JD-td-X10"/>
+                                <exclude reference="IXz-Xl-3Mh"/>
+                                <exclude reference="KA5-pn-P2X"/>
+                                <exclude reference="KbY-Jc-mct"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="showHeadImageButton" destination="qlT-nU-aUP" id="0QT-Kg-C4h"/>
+                        <outletCollection property="headImageViews" destination="32t-GY-bas" collectionClass="NSMutableArray" id="GWh-OW-pOD"/>
+                        <outletCollection property="headImageViews" destination="bo4-2d-ob4" collectionClass="NSMutableArray" id="iGr-se-ILG"/>
+                        <outletCollection property="headImageViews" destination="NSz-fc-cfI" collectionClass="NSMutableArray" id="DYE-Zk-M4x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182.5" y="380.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchImage" width="320" height="480"/>
+        <image name="PlaceHolder" width="510" height="510"/>
+    </resources>
+</document>

@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  Demos
+//
+//  Created by 田子瑶 on 16/9/27.
+//  Copyright © 2016年 田子瑶. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+[code]//屏幕宽、高
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+//1个像素的宽度
+#define SINGLE_LINE_WIDTH (1.0f/[UIScreen mainScreen].scale)
+//系统版本
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+//图片
+#define ImageWithName(A) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:A ofType:nil]]
+//rgb颜色(十进制)
+#define UIColorFromRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+//rgb颜色(十六进制)
+#define UIColorFromHexRGB(rgbValue) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:1.0] \
+
+//DEBUG模式下,打印日志(包括函数名、行号)
+#ifdef DEBUG
+# define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+# define DLog(...)
+
+
+#endif /* PrefixHeader_pch */
